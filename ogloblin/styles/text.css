@@ -1,0 +1,165 @@
+header .btn_text {
+  margin-left: -2px; }
+header #nav-icon3 {
+  width: 14px;
+  margin-top: 4px;
+  margin-left: 7px; }
+header .social a {
+  margin-right: -11px; }
+
+.main_sc .main_text p {
+  letter-spacing: 1px; }
+
+.text {
+  padding: 80px 0 103px;
+  margin-left: -28px; }
+  .text h2 {
+    color: #535353;
+    font-family: gl;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    margin-bottom: 51px; }
+  .text p {
+    color: #4b4b4b;
+    font-family: light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+    margin-right: -40px; }
+  .text p:last-of-type {
+    margin-bottom: 0; }
+
+.albums {
+  text-align: center; }
+
+.one_album {
+  margin-bottom: 70px;
+  margin-left: 15%;
+  width: 69%; }
+  .one_album .big_image {
+    margin-bottom: 27px;
+    position: relative; }
+    .one_album .big_image > img {
+      width: 100%; }
+  .one_album h3 {
+    text-transform: uppercase;
+    color: #343434;
+    font-family: gl;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 15px; }
+  .one_album p {
+    color: #535353;
+    font-family: light;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.93px;
+    margin-bottom: 20px;
+    max-width: 90%;
+    margin: 0 auto 12px;
+    position: relative;
+    left: -3px; }
+  .one_album .see_all {
+    text-transform: uppercase;
+    color: #535353;
+    font-family: gl;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px; }
+
+.blockquote {
+  margin-bottom: 46px; }
+  .blockquote h2 {
+    max-width: 90%;
+    margin-bottom: 40px; }
+  .blockquote p {
+    margin-left: -24px;
+    margin-right: -14px;
+    margin-top: -25px;
+    font-family: Myriad;
+    letter-spacing: 1.3px; }
+  .blockquote:before {
+    left: 49%; }
+
+@media (min-width: 320px) and (max-width: 992px) {
+  header #nav-icon3 {
+    margin-top: -2px; }
+  header .title h1 {
+    padding-left: 0; }
+
+  .main_sc {
+    padding-top: 20vh; }
+
+  .text {
+    margin-left: 0;
+    padding: 40px 0px 40px; }
+    .text h2 {
+      margin-bottom: 30px; }
+    .text p {
+      margin-left: 0;
+      margin-right: 0; }
+
+  footer {
+    padding: 40px 0; }
+    footer .copy {
+      margin-bottom: 0; } }
+@media (min-width: 320px) and (max-width: 468px) {
+  .one_album {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px; }
+
+  .blockquote {
+    padding: 60px 0;
+    margin-bottom: 30px; }
+    .blockquote:before {
+      top: 30px; }
+    .blockquote p {
+      margin: 0; } }
+@media (min-width: 469px) and (max-width: 992px) {
+  .main_sc {
+    padding-top: 30vh; } }
+@media (min-width: 1400px) {
+  header #nav-icon3 {
+    margin-top: -4px;
+    margin-left: 0; }
+  header .btn_text {
+    margin-top: 0; }
+
+  .main_sc .main_text h3 {
+    font-size: 14px; }
+  .main_sc .main_text p {
+    margin: 20px auto;
+    line-height: 26px; }
+
+  .text h2 {
+    font-size: 16px; }
+  .text p {
+    font-size: 15px;
+    line-height: 24px; }
+
+  .one_album h3 {
+    font-size: 16px; }
+  .one_album p {
+    font-size: 15px; }
+  .one_album .see_all {
+    font-size: 12px; }
+
+  .blockquote h2 {
+    font-size: 16px;
+    margin-bottom: 25px; }
+  .blockquote p {
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 24px; } }
+
+/*# sourceMappingURL=text.css.map */

@@ -1,0 +1,301 @@
+header.dark {
+	padding: 52px 0 33px;
+	.title {
+		h1 {
+			margin-left: 0;
+		}
+	}
+}
+
+.crumbs {
+	padding-right: 12px;
+	li {
+		margin-right: 10px;
+		padding-right: 12px;
+	}
+	li:last-of-type {
+		margin-right: -10px;
+		padding-right: 0;
+	}
+}
+
+.page_nav {
+	.text {
+		margin-top: -3px;
+		.prev {
+			right: 98px;
+		}
+		.all {
+			margin-right: 41px;
+		}
+		.next {
+			right: -14px;
+		}
+	}
+}
+
+.album {
+	.top_row {
+		margin-top: 75px;
+		margin-bottom: 75px;
+		.title {
+			text-align: center;
+			.counter {
+				margin-bottom: 3px;
+				color: #323232;
+				font-family: gl;
+				font-size: 11px;
+				letter-spacing: 2.5px;
+				line-height: 18px;
+			}
+			h2 {
+				margin-top: 0;
+				color: #323232;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-family: gl;
+			   font-size: 14px;
+				line-height: 22px;
+				letter-spacing: 2.5px;
+			}
+		}
+	}
+	.main_item {
+		margin-bottom: 80px;
+		.text {
+			margin: 0 auto;
+			max-width: 70%;
+			text-align: center;
+			color: #535353;
+			font-family: light;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 20px;
+			letter-spacing: 0.93px;
+		}
+		.big_image {
+			position: relative;
+			margin-bottom: 35px;
+			img {
+				width: 100%;
+			}
+			.img__description_layer {
+			}
+			.img__description {
+				img {
+					width: auto;
+				}
+			}
+			&:hover .img__description_layer {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.album {
+	.top_row {
+		margin-top: 70px;
+		margin-bottom: 61px;
+		.first {
+			padding-top: 6px;
+		}
+		.title {
+			.counter {
+				margin-bottom: 4px;
+			}
+			h2 {
+				padding-left: 6px;
+			}
+		}
+	}
+	.main_item {
+		.big_image {
+			margin-left: 24px;
+			margin-right: 24px;
+			margin-bottom: 33px;
+		}
+		.text {
+			max-width: 82%;
+		}
+	}
+}
+
+.works {
+	.box {
+		min-height: 220px;
+		.img__wrap {
+			min-height: 220px;
+		}
+	}
+}
+
+.img__description {
+	margin-top: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.works {
+		.box {
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 468px) {
+	.grid_wrap {
+		.box {
+		    grid-column-start: 1;
+   			grid-column-end: 4;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.works {
+		.box.two_thirds {
+			height: 30vw !important;
+			.img__wrap {
+			    height: 30vw!important;
+			}
+		}
+		.box {
+		    min-height: 220px;
+		    height: 25.3vw!important;
+		    .img__wrap {
+	    	    height: 25.3vw!important;
+		    }
+		}
+		.box.high {
+			.img__wrap {
+				height: 30vw !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 992px) {
+	header.dark {
+		padding: 30px 0 20px;
+		.title {
+			h1 {
+				padding-left: 0;
+			}
+		}
+		#nav-icon3 {
+			margin-left: 0;
+		}
+	}
+	.crumbs {
+		display: none;
+	}
+	.album {
+		.top_row {
+			position: relative;
+			margin: 30px 0;
+			.date {
+				padding-left: 0;
+				margin-top: 40px;
+				margin-bottom: 30px;
+			}
+			.page_nav {
+				left: 52%;
+				position: absolute;
+				top: 0;
+				transform: translate(-52%, 0);
+				.text {
+					.prev, .next {
+						top: 3px;
+					}
+				}
+			}
+			.title {
+				h2 {
+					margin-left: 0;
+				}
+			}
+			.descr {
+				margin: 0;
+			}
+		}
+		.news_with_img {
+			.one_news {
+				max-width: 100%;
+				.big_image {
+					margin-bottom: 30px;
+				}
+				.text {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.grid_wrap {
+		.box {
+			height: 225px !important;
+			.img__wrap {
+				height: 225px !important;
+			}
+		}
+	}
+	footer {
+		padding: 30px 0;
+		.copy {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	header.dark {
+		.social {
+			a  {
+				font-size: 14px;
+			}
+		}
+	}
+	.page_nav {
+		.text {
+			margin-top: 6px;
+			.next, .prev {
+				top: 3px;
+			}
+		}
+	}
+	.tab-mnu {
+		li {
+			margin-right: 10px;
+			font-size: 13px;
+		}
+		.active {
+			padding: 10px;
+			font-size: 13px;
+		}
+	}
+	.album_item {
+		h3 {
+			padding-top: 25px;
+		}
+		&:after {
+			font-size: 15px;
+		}
+	}
+	.album {
+		.top_row {
+			.title {
+				.counter {
+					font-size: 13px;
+					margin-bottom: 7px;
+				}
+				h2 {
+					font-size: 16px;
+				}
+			}
+		}
+		.main_item {
+			.text {
+				font-size: 15px;
+			}
+		}
+	}
+}

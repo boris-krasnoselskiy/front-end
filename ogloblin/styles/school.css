@@ -1,0 +1,151 @@
+header .title h1 {
+  margin-left: -2px;
+  margin-top: 0;
+  letter-spacing: 1px; }
+header #nav-icon3 {
+  margin-top: 2px;
+  margin-left: -6px; }
+header .btn_text {
+  margin-left: 1px;
+  margin-top: -1px; }
+header .social a {
+  margin-top: 1px;
+  letter-spacing: 1px; }
+
+.img__description {
+  margin-top: 0; }
+
+.main_sc {
+  height: 100vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important; }
+  .main_sc .main_text {
+    padding: 25vh 0px;
+    text-align: center; }
+    .main_sc .main_text h3 {
+      margin-left: -14px;
+      margin-top: 18px;
+      color: #ffffff;
+      font-family: gl;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 11px;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px; }
+    .main_sc .main_text h2 {
+      color: #ffffff;
+      font-family: gl;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 2px;
+      margin-top: 31px;
+      margin-left: -8px; }
+    .main_sc .main_text p {
+      color: #ffffff;
+      font-family: light;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      letter-spacing: 1px;
+      margin-right: -17px; }
+
+.about {
+  margin-left: -45px;
+  padding: 73px 0px 0; }
+  .about .about_content {
+    padding-right: 38px; }
+  .about .title_wrap {
+    display: inline-block;
+    margin-top: -10px; }
+    .about .title_wrap h2 {
+      display: block;
+      margin-top: 0;
+      text-transform: uppercase;
+      color: #393939;
+      font-family: gl;
+      font-size: 34px;
+      line-height: 34px;
+      font-weight: 700; }
+    .about .title_wrap h2:last-of-type {
+      margin-top: -14px;
+      margin-left: 10px; }
+  .about .tab-block .tab-mnu {
+    margin-top: 24px;
+    margin-right: 10px; }
+
+.album {
+  margin-top: 14px;
+  margin-bottom: 80px; }
+  .album .title {
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+    color: #535353;
+    font-family: gl;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px; }
+  .album .date {
+    letter-spacing: 4px;
+    color: #535353;
+    font-family: gl;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px; }
+  .album .big_image {
+    position: relative; }
+    .album .big_image > img {
+      width: 100%; }
+
+@media (min-width: 320px) and (max-width: 992px) {
+  header .title h1 {
+    padding-left: 0; }
+  header #nav-icon3 {
+    margin-top: -3px;
+    margin-left: 0; }
+
+  .main_sc .main_text h2, .main_sc .main_text h3 {
+    margin-left: 0; }
+
+  .about {
+    margin-left: 0;
+    padding: 40px 0; }
+
+  footer .copy {
+    margin-bottom: 0; } }
+@media (min-width: 992px) and (max-width: 1399px) {
+  header {
+    margin-top: 39px; } }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  header .btn_text {
+    margin-top: -3px; } }
+@media (min-width: 1400px) {
+  header .title h1 {
+    letter-spacing: 3px; }
+  header .social a {
+    letter-spacing: 2px; }
+
+  .main_sc .main_text {
+    padding-top: 35vh; }
+    .main_sc .main_text h3 {
+      font-size: 15px; }
+    .main_sc .main_text h2 {
+      font-size: 21px;
+      margin-bottom: 20px; }
+    .main_sc .main_text p {
+      font-size: 15px;
+      line-height: 24px; }
+
+  .tab-pane h4 {
+    font-size: 16px; }
+  .tab-pane p {
+    font-size: 15px;
+    line-height: 22px; }
+
+  .album .date {
+    margin-bottom: 5px; }
+  .album .title {
+    font-size: 18px; } }
+
+/*# sourceMappingURL=school.css.map */
