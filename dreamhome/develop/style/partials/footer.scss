@@ -1,0 +1,97 @@
+@import "vars";
+
+footer {
+	border-top: 1px solid $light_grey;
+	position: relative;
+	z-index: 1;
+	padding: 90px 0;
+
+	.container {
+		font-size: 0;
+	}
+
+	.copy {
+		p {
+			font-size: 14px;
+		}
+	}
+
+	.social {
+	    display: inline-block;
+	    margin-top: 10px;
+	    & > div {
+	    	position: relative;
+	    	display: inline-block;
+	    	transition: all .35s;
+				margin-right: 10px;
+				width: 27px;
+				height: 27px;
+	    }
+	    .facebook {
+				background: url(../img/facebook.png) no-repeat;
+				&:hover {
+					background: url(../img/facebook_hover.png) no-repeat;
+				}
+	    }
+	    .instagram {
+				background: url(../img/instagram.png) no-repeat;
+				&:hover {
+					background: url(../img/instagram_hover.png) no-repeat;
+				}
+	    }
+	}
+
+	.logo {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 5px;
+		img {
+			width: 58px;
+		}
+	}
+
+	.column {
+		display: inline-block;
+		width: 25%;
+		vertical-align: top;
+		h5 {
+			font-size: 16px;
+			font-weight: 700;
+		}
+		li, li a {
+			transition: all .35s;
+			color: $grey;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+		a:hover {
+			opacity: 0.65;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+	footer {
+		padding: 60px 0 60px;
+		.column {
+			width: 100%;
+			margin-bottom: 45px;
+			display: none;
+			li a {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+		}
+		.column:last-of-type {
+			margin-bottom: 0;
+		}
+		.copy {
+			display: block;
+		}
+		.contacts {
+			display: block;
+		}
+	}
+}

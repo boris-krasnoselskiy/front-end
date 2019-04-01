@@ -1,0 +1,452 @@
+@import "partials/vars";
+
+.content {
+	margin-top: 89px;
+}
+
+.calculator {
+	margin-top: 0;
+}
+
+.description {
+  padding: 35px 0 0;
+	min-height: 685px;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center!important;
+	.text {
+		position: absolute;
+		bottom: 92px;
+		max-width: 50%;
+    width: 50%;
+    max-width: 590px;
+		h1 {
+			color: #fff;
+			font-size: 48px;
+			font-weight: 700;
+			line-height: 60px;
+			margin-bottom: 35px;
+		}
+		p {
+			color: #fff;
+			font-size: 24px;
+			line-height: 36px;
+			font-weight: 400;
+		}
+	}
+}
+
+.slider_wrap.center {
+	.slider_item {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.definition {
+	padding: 94px 0;
+	background: $light_grey;
+	h2 {
+		text-align: center;
+		margin-bottom: 50px;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+	.slider_wrap {
+		display: inline-block;
+		vertical-align: middle;
+		width: 60%;
+	}
+	.def_slider {
+		position: relative;
+	}
+	.right_text {
+		width: 39%;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 0 0 52px;
+	}
+}
+
+.room_parts {
+  padding: 117px 0 0;
+	h2 {
+		margin-bottom: 30px;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+	.top_text {
+    max-width: 63%;
+    margin-bottom: 155px;
+	}
+	.top_text.small_margin {
+		margin-bottom: 40px;
+	}
+	.room_part_slider {
+		margin-bottom: 130px;
+	}
+	.room_slider {
+		margin-bottom: 65px;
+		width: 100%;
+		.slider_item {
+			padding: 0 26px;
+			outline: none;
+		}
+		img {
+			width: 100%;
+			margin-bottom: 35px;
+		}
+		h4 {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+		.price_block {
+			margin-top: 40px;
+			span {
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 24px;
+			}
+		}
+	}
+  .def_slider {
+  	.silder_item {
+  		img {
+  			width: 100%;
+  		}
+  	}
+  }
+}
+
+.text_cont {
+	margin-top: 70px;
+	margin-bottom: 100px;
+	.text {
+		padding-top: 50px;
+		width: 55%;
+		h4 {
+		  font-size: 30px;
+	    font-weight: 700;
+	    line-height: 28px;
+	    margin-bottom: 25px;
+		}
+	}
+}
+
+.slick-track-l0 {
+	text-align: center;
+}
+
+.countertop_slider,
+.door_slider,
+.sink_slider {
+	text-align: center;
+	.slider_item  {
+		width: 20%;
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
+		.img_wrap {
+			height: 240px;
+			border: 3px solid #f1f5f6;
+			position: relative;
+			margin-bottom: 35px;
+		}
+		img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 215px;
+		}
+		h4 {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+		.price_block {
+			margin-top: 40px;
+			span {
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 24px;
+			}
+		}
+		p {
+			margin-bottom: 5px;
+		}
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.door_slider {
+	.slider_item {
+		padding: 0 25px;
+	}
+}
+
+.countertop_slider,
+.sink_slider {
+	margin-top: 95px;
+	margin-bottom: 90px;
+	margin-left: -25px;
+  margin-right: -25px;
+	.slick-list {
+		padding: 0!important;
+	}
+	.slider_item {
+		width: 33%;
+		padding: 25px;
+		.img_wrap {
+			border: none;
+			height: auto;
+			img {
+				max-width: 100%;
+				position: relative;
+		    left: 0;
+		    top: 0;
+		    transform: none;
+		    width: 100%;
+		    max-width: 100%;
+			}
+		}
+	}
+}
+
+.text_cont.right_text {
+	img {
+		float: left;
+	}
+	.text {
+		margin-left: 42%;
+	}
+}
+
+.text_cont.left_text {
+	img {
+		float: right;
+	}
+	.text {
+		margin-right: 42%;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 959px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+	.content {
+		margin-top: 49px;
+	}
+	.round_arrow .slick-prev {
+		left: 25px;
+	}
+	.round_arrow .slick-next {
+    left: 85px;
+	}
+	.description {
+    min-height: 400px;
+		.text {
+			width: 90%;
+			h1 {
+				font-size: 24px;
+		    font-weight: 700;
+		    margin-bottom: 0px;
+			}
+			p {
+		    font-size: 16px;
+		    font-weight: 400;
+		    line-height: 24px;
+			}
+		}
+	}
+	.definition, .room_parts {
+		padding: 30px 0 0;
+		.room_part_slider {
+			margin-bottom: 40px;
+		}
+		.top_text {
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+		.room_slider {
+			margin-top: 70px;
+			margin-bottom: 0;
+			.slider_item {
+				padding: 0 15px;
+				img {
+					width: auto;
+			    margin-bottom: 35px;
+			    max-height: 200px;
+			    display: block;
+			    margin: 0 auto 20px;
+				}
+			}
+		}
+		h2 {
+	    font-size: 24px;
+	    font-weight: 700;
+	    line-height: 36px;
+	    margin-bottom: 0;
+		}
+		.slider_wrap {
+			width: 100%;
+			.slick-slide img {
+		    max-height: 230px;
+		    display: block;
+		    margin: 0 auto;
+			}
+		}
+		.right_text {
+	    width: 100%;
+	    display: inline-block;
+	    vertical-align: middle;
+	    padding: 0;
+	    margin-top: 30px;
+	    p {
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+	    }
+		}
+	}
+	.text_cont {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.text_cont.right_text img,
+	.text_cont.left_text img {
+		float: none;
+    width: 100%;
+    max-width: 370px;
+    display: block;
+    max-height: 260px;
+    margin: 20px auto 0;
+	}
+	.text_cont.left_text .text {
+		margin-right: 0;
+		width: 100%;
+	}
+	.text_cont.right_text .text {
+		margin-left: 0;
+		width: 100%;
+	}
+	.countertop_slider, .sink_slider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+	}
+	.countertop_slider, .door_slider, .sink_slider {
+		.slider_item {
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 0 15px;
+			.img_wrap {
+				margin-bottom: 10px;
+				img {
+			    width: 100%;
+			    max-width: 370px;
+			    display: block;
+			    max-height: 260px;
+			    margin: 20px auto 30px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 681px) and (max-width: 1300px) {
+	.content {
+	  margin-top: 52px;
+	}
+	.description {
+		min-height: 560px;
+		.text {
+			h1 {
+		    font-size: 38px;
+		    font-weight: 700;
+		    line-height: 40px;
+		    margin-bottom: 10px;
+			}
+			p {
+		    font-size: 22px;
+		    line-height: 28px;
+			}
+		}
+	}
+	.definition {
+		padding: 50px 0;
+		.def_slider {
+			margin-bottom: 30px;
+			img {
+		    width: 100%;
+		    display: block;
+			}
+		}
+		.slider_wrap {
+			width: 100%;
+		}
+		.right_text {
+			width: 100%;
+			padding: 0;
+		}
+	}
+	.room_parts {
+		padding: 30px 0 0;
+		.top_text {
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+		.room_slider {
+			margin-top: 80px;
+			margin-bottom: 0;
+		}
+	}
+	.def_slider {
+		.slick-slide {
+	    margin: 0 10px;
+	  }
+	  .slick-list {
+	    margin: 0 10px;
+	  }
+	}
+	.slider_wrap.center {
+	  .slick-slide {
+	    margin: 0 10px;
+	  }
+	  .slick-list {
+	    margin: 0 10px;
+	  }
+		.slider_item {
+			img {
+				/*max-width: 90%;*/
+			}
+		}
+	}
+	.text_cont.right_text,
+	.text_cont.left_text {
+		img {
+			float: none;
+	    display: block;
+	    margin: 0 auto;
+		}
+		.text {
+			margin-left: 0;
+			width: 100%;
+		}
+	}
+	.countertop_slider, .door_slider, .sink_slider {
+		.slider_item {
+			width: 49%;
+			margin-bottom: 20px;
+		}
+	}
+}

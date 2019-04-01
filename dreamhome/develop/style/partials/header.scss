@@ -1,0 +1,404 @@
+@import "vars";
+
+.home {
+	header {
+	  height: auto;
+	  transition: all .35s;
+		background: transparent;
+		.container {
+			overflow: visible;
+		}
+		.logo {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			.logo_white {
+				display: none;
+			}
+			.default_logo {
+				display: inline-block;
+			}
+			.empty_logo {
+				display: none;
+			}
+			img {
+				transition: all 0.35s;
+			}
+			&:hover img {
+				opacity: 0.65;
+			}
+		}
+		.phone_holder {
+			display: inline-block;
+			vertical-align: top;
+	    margin-left: 50px;
+	    margin-top: 11px;
+			a {
+				color: #050505;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 24px;
+				transition: all 0.35s;
+				&:hover {
+					color: $blue;
+					text-decoration: underline;
+				}
+			}
+			.call_req {
+				display: none;
+				margin-left: 27px;
+				color: $blue;
+				font-size: 14px;
+				font-weight: 400;
+				border-bottom: 1px dashed $blue;
+				&:hover {
+					text-decoration: none;
+					border-bottom: none;
+				}
+			}
+		}
+		nav {
+			position: relative;
+			float: right;
+			margin-right: -20px;
+			margin-top: 13px;
+			.default_show {
+				display: inline-block;
+			}
+			.stuck_show_li {
+				display: none;
+			}
+			ul {
+				margin-right: 0;
+			}
+			li {
+				margin-left: 30px;
+				a {
+					padding: 0;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 14px;
+					color: $grey;
+					transition: all 0.35s;
+					&:hover {
+						color: $blue;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.stuck_show_btn {
+			display: none;
+		}
+	}
+	header.stuck {
+		position: fixed;
+		background: #fff;
+	  padding: 24px 0;
+	  z-index: 999;
+		.default_logo {
+			display: none;
+		}
+		.empty_logo {
+			display: block;
+		}
+		.phone_holder {
+			margin-left: 14px;
+			margin-top: 8px;
+			a {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+			.call_req {
+				display: inline-block;
+			}
+		}
+		nav {
+			margin-right: -3px;
+	    margin-top: 13px;
+			ul {
+				margin-right: 190px;
+				li {
+					margin-left: 42px;
+				}
+			}
+			.default_show {
+				display: none;
+			}
+			.stuck_show_li {
+				display: inline-block;
+			}
+		}
+		.stuck_show_btn {
+			display: inline-block;
+	    width: 160px;
+	    font-size: 14px;
+	    padding: 8px 7px;
+	    position: absolute;
+	    top: -12px;
+			right: -2px;
+		}
+	}
+	.desktop_header {
+		padding: 44px 0;
+	}
+}
+
+.home.header_white {
+	header {
+		.default_logo {
+			display: none;
+		}
+		.logo_white {
+			display: block;
+		}
+		.phone_holder a {
+			color: #fff;
+		}
+		nav li a {
+			color: #fff;
+		}
+	}
+	header.stuck {
+		.logo_white {
+			display: none;
+		}
+		.phone_holder a {
+			color: #000;
+		}
+		nav li a {
+			color: #000;
+		}
+	}
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	background: #fff;
+	padding: 24px 0;
+	z-index: 999;
+  height: auto;
+  transition: all .35s;
+	.container {
+		overflow: visible;
+	}
+	.logo {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		.default_logo {
+			display: none;
+		}
+		.empty_logo {
+			display: block;
+		}
+		img {
+			transition: all 0.35s;
+		}
+		&:hover img {
+			opacity: 0.65;
+		}
+	}
+	.phone_holder {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 14px;
+		margin-top: 5px;
+		color: #050505;
+		font-size: 14px;
+		transition: all 0.35s;
+		a {
+			font-size: 14px;
+			font-weight: 700;
+		}
+		.call_req {
+			display: inline-block;
+			margin-left: 27px;
+			color: $blue;
+			font-size: 14px;
+			font-weight: 400;
+			border-bottom: 1px dashed $blue;
+		}
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+	nav {
+		position: relative;
+		float: right;
+		margin-right: -3px;
+	  margin-top: 7px;
+		.default_show {
+			display: inline-block;
+		}
+		.stuck_show_li {
+			display: none;
+		}
+		ul {
+			margin-right: 190px;
+			li {
+				margin-left: 42px;
+				a {
+					padding: 0;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 24px;
+					color: $grey;
+					transition: all 0.35s;
+					&:hover {
+						opacity: 0.75;
+					}
+				}
+			}
+		}
+		.default_show {
+			display: none;
+		}
+		.stuck_show_li {
+			display: inline-block;
+		}
+	}
+	.stuck_show_btn {
+		display: inline-block;
+    width: 160px;
+    font-size: 14px;
+    padding: 8px 7px;
+    position: absolute;
+    top: -9px;
+		right: -2px;
+	}
+}
+
+.wrapper .mobile_header {
+	background: #fff;
+	padding: 14px 0 5px;
+	.container {
+		position: relative;
+	}
+	.logo {
+		margin-left: 60px;
+		img {
+			width: 37px;
+		}
+	}
+	.phone_holder {
+		float: right;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 15px;
+	}
+}
+
+.header_white .mobile_header {
+	background: transparent;
+}
+
+header .logo_white {
+	display: none;
+}
+
+@media (min-width: 320px) and (max-width: 959px) {
+	.wrapper .mobile_header .logo {
+    	margin-left: 45px;
+	}
+	.wrapper .mobile_header .phone_holder {
+		margin-right: 0;
+	}
+	.wrapper header,
+	.home.header_white header {
+		.logo_white {
+			display: none;
+		}
+		.default_logo {
+			display: block;
+		}
+		.phone_holder a {
+			color: #050505;
+		}
+	}
+
+}
+
+@media (min-width: 960px) and (max-width: 1299px) {
+	.home.header_white {
+		.burger li {
+			background: #fff;
+		}
+	}
+	.wrapper .mobile_header .logo {
+    	margin-left: 60px;
+	}
+	.wrapper .mobile_header .phone_holder {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 1299px) {
+	.burger {
+		display: inline-block;
+	}
+	.mobile_header {
+		display: block;
+		width: 100%;
+	}
+	.desktop_header {
+		display: none;
+	}
+}
+
+@media (min-width: 960px) {
+	.wrapper .mobile_header {
+		.default_logo {
+			display: block;
+			width: 45px;
+		}
+		.logo_white {
+			display: none;
+		}
+		.phone_holder {
+	    margin-left: 54px;
+    	margin-top: 10px;
+		}
+		.logo img {
+			width: 64px;
+		}
+	}
+}
+
+@media (min-width: 1300px) {
+	.mobile_header {
+		display: none;
+	}
+	.desktop_header {
+		display: block;
+		position: fixed;
+		z-index: 999;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+	.home {
+		.desktop_header {
+			padding: 43px 0;
+			position: absolute;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1300px) {
+	.home {
+		.desktop_header {
+			padding: 43px 0;
+		}
+	}
+	.desktop_header {
+		padding: 24px 0;
+	}
+}

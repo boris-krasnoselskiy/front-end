@@ -1,0 +1,95 @@
+@import "vars";
+
+.styles {
+	padding-top: 190px;
+	h2 {
+		font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+    margin-bottom: 15px;
+	}
+	.descript {
+    max-width: 50%;
+  	text-align: left;
+	}
+	.wrap {
+		font-size: 0;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 959px) {
+	.styles {
+		padding: 140px 0 26px;
+		h2 {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 36px;
+		}
+		.descript {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+	.styles {
+		.style_item {
+			margin: 0 0 20px;
+			width: 100%;
+			.text {
+				p {
+					display: none;
+				}
+				.price {
+					margin-bottom: 20px;
+				}
+				.btn {
+					width: 100%;
+				}
+			}
+		}
+		.style_item.create_new {
+			padding: 54px 15px;
+			p {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (min-width: 480px) {
+	.styles {
+		.style_item {
+			.text {
+				p {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 681px) and (max-width: 959px) {
+	.styles {
+		.wrap {
+			margin: 0;
+		}
+		.style_item {
+			display: inline-block;
+			width: 48%;
+			margin-right: 4%;
+			margin-left: 0;
+		}
+		.style_item:nth-of-type(even) {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (min-width: 960px) and (max-width: 1300px) {
+	.styles .style_item .text .btn {
+		float: none;
+		margin-top: 10px;
+	}
+}

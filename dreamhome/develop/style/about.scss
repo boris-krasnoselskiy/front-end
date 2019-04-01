@@ -1,0 +1,301 @@
+@import "vars";
+
+.content {
+	margin-top: 89px;
+}
+
+.description {
+  padding: 125px 0 0;
+	min-height: 685px;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center!important;
+	.text {
+		position: absolute;
+    bottom: 120px;
+    width: 50%;
+    max-width: 580px;
+		h1 {
+			max-width: 70%;
+			color: #fff;
+			font-size: 48px;
+			font-weight: 700;
+			line-height: 60px;
+			margin-bottom: 35px;
+		}
+		p {
+	    color: #fff;
+	    font-size: 16px;
+	    line-height: 26px;
+	    font-weight: 400;
+		}
+	}
+	.white_border {
+    position: absolute;
+    bottom: 138px;
+    right: 185px;
+	}
+}
+
+.inside {
+	margin-bottom: 105px;
+}
+
+.main {
+	vertical-align: top;
+  display: inline-block;
+  width: 800px;
+  margin-top: 90px;
+  margin-right: 30px;
+  h2 {
+		color: #000000;
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 40px;
+  }
+  & > p {
+  	margin-bottom: 20px;
+  }
+}
+
+aside {
+	margin-top: -100px;
+	vertical-align: top;
+	display: inline-block;
+	width: 380px;
+	background: #fff;
+	.info {
+		padding: 85px 55px 100px;
+		.title {
+			color: #ffffff;
+			font-size: 36px;
+			line-height: 36px;
+			font-weight: 700;
+			margin-bottom: 62px;
+		}
+	}
+}
+
+.counter {
+	margin-bottom: 75px;
+	.number {
+		font-size: 72px;
+		font-weight: 700;
+		color: #fff;
+	}
+	.descr {
+		display: block;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 38px;
+		color: #000;
+	}
+}
+
+.counter:last-of-type {
+	margin-bottom: 0;
+}
+
+.we_are {
+	h3 {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 24px;
+		margin-bottom: 40px;
+	}
+	.wrap {
+		font-size: 0;
+		margin: 0 -2%;
+	}
+}
+
+.collaborator {
+	display: inline-block;
+  margin: 0 2% 113px;
+  width: 21%;
+	.img_wrap {
+		margin-bottom: 30px;
+		background: $blue;
+		img {
+			width: 100%;
+		}
+	}
+	.who {
+		display: block;
+	}
+}
+
+.partners {
+	h3 {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 100px;
+	}
+	.partners_list {
+		max-width: 980px;
+		margin: 0 auto 20px;
+		text-align: center;
+		font-size: 0;
+		li {
+			width: 17%;
+			margin-right: 3%;
+			margin-bottom: 70px;
+			vertical-align: middle;
+			display: inline-block;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+.mobile_slider {
+	display: none;
+}
+
+@media (min-width: 320px) and (max-width: 740px) {
+}
+
+@media (min-width: 741px) and (max-width: 959px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 959px) {
+	.mobile_slider {
+		display: block;
+	}
+	.content {
+		margin-top: 59px;
+	}
+	.description {
+    min-height: 0;
+    padding-top: 150px;
+    padding-bottom: 40px;
+		.text {
+			position: relative;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			max-width: 100%;
+			h1 {
+				width: 100%;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 28px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.inside {
+		margin-bottom: 30px;
+		h3 {
+			font-size: 24px;
+		}
+	}
+	aside {
+		margin-top: 0;
+		width: 100%;
+		.info {
+			padding: 55px 15px;
+			.title {
+				font-size: 24px;
+				line-height: 24px;
+				margin-bottom: 20px;
+			}
+			.counter {
+				display: inline-block;
+				margin-right: 40px;
+				margin-bottom: 0;
+				.number {
+					font-size: 24px;
+					line-height: 28px;
+				}
+				.descr {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+			.counter:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+	.we_are {
+		margin-bottom: 40px;
+		.wrap {
+			display: none;
+		}
+		h3 {
+			margin-top: 20px;
+			text-align: left;
+			font-size: 24px;
+	    font-weight: 700;
+	    margin-bottom: 10px;
+		}
+		.mobile_slider {
+			.img_wrap {
+				max-width: 300px;
+				img {
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	.partners {
+		h3 {
+			text-align: left;
+			padding-left: 15px;
+			font-size: 24px;
+	    font-weight: 700;
+	    margin-bottom: 30px;
+		}
+		.partners_list {
+			li {
+				width: 42%;
+			}
+		}
+	}
+	.collaborator {
+		margin-bottom: 0;
+	}
+	.main {
+		width: 100%;
+		margin-top: 40px;
+		h2 {
+			padding-left: 15px;
+			text-align: left;
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (min-width: 960px) and (max-width: 1300px) {
+	main {
+		width: 60%;
+	}
+	.collaborator {
+		width: 29.3%;
+		margin-bottom: 70px;
+	}
+	aside {
+		width: 36%;
+		.info {
+			padding: 55px 37px;
+			.title {
+				font-size: 24px;
+			}
+			.descr {
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 42px;
+			}
+		}
+	}
+	.we_are h3,
+	.partners h3 {
+		margin-bottom: 70px;
+	}
+}

@@ -1,0 +1,55 @@
+<section class="calculator">
+  <div class="container">
+    <div class="left_part select_values">
+      <h3>Конструктор ремонта</h3>
+
+      <div class="input_wrap">
+        <label>Выбрать стиль</label>
+        <select class="select js_select design_type">
+          <option value="1">Нью-Йорк лофт</option>
+          <option value="2">Минимализм</option>
+          <option value="3">Скандинавский стиль</option>
+          <option value="4">Стиль Хай-Тек</option>
+          <option value="5">Современная клссика</option>
+          <option value="6">Арт Деко</option>
+          <option value="7">Лофт</option>
+          <option value="8">Прованс</option>
+          <option value="9">Сельская местность</option>
+          <option value="10">Современный</option>
+        </select>
+      </div>
+
+      <div class="calc_row clearfix">
+        <div class="input_wrap area">
+          <label>Площадь, м2</label>
+          <input type="text" value="45,2">
+        </div>
+
+        <div class="input_wrap toilet">
+          <label>Кол-во санузлов</label>
+          <input type="number" class="number_inp js_input" value="1">
+        </div>
+      </div>
+
+      <div class="calc_row clearfix">
+        <div class="input_wrap room_count">
+          <label>Кол-во комнат</label>
+          <input type="number" class="number_inp js_input" value="2">
+        </div>
+      </div>
+
+      <div class="checkbox_wrap">
+        <label>
+          <input type="checkbox" class="checkbox js_checkbox">
+          Демонтаж не нужен
+        </label>
+      </div>
+
+      <a href="javascript:void(0);" class="btn full_width js_calculate">Перейти в конструктор</a>
+
+    </div>
+    <!-- end of left_part select_values -->
+    <div class="img_holder" style="background: url('img/calc_banner.png');"></div>
+  </div>
+</section>
+<!-- end of calculator -->

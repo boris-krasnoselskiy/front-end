@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>contacts</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/libs/trunk.css">
+  <link rel="stylesheet" href="css/libs/material.form.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+
+<div class="wrapper">
+  //= ./templates/header.html
+
+  <div class="content slide">
+    <section class="contacts">
+      <div class="container">
+        <div class="form_wrap">
+          <h3>Написать нам</h3>
+          <form action="/" class="form material">
+            <input type="text" placeholder="Ваше имя" name="name">
+            <input type="text" placeholder="Номер телефона" name="phone">
+            <input type="text" placeholder="Ваш email" name="mail">
+            <textarea class="msg" name="msg" placeholder="Текст сообщения…"></textarea>
+            <input type="submit" class="btn blue_gradient border" value="Отправить сообщение">
+          </form>
+        </div>
+
+        <div class="right_part">
+          <div class="map" id="map" data-zoom="16" data-latitude="55.710036" data-longitude="37.654052" data-location="55.711428,37.652760"></div>
+
+          <div class="bottom_block">
+            <h3>Контакты</h3>
+            <table class="table left">
+              <tr>
+                  <td>
+                      <b>E-mail:</b>
+                  </td>
+                  <td>
+                      <a href="mailto:info@dreamhome.design">info@dreamhome.design</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <b>Телефон:</b>
+                  </td>
+                  <td>
+                      <a href="tel:+8 (495)-248-19-03" class="callibri-land">+8 (495)-248-19-03</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <b>Факс:</b>
+                  </td>
+                  <td>
+                      <p>+7 (495) 134-134-4</p>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Мы в социальных сетях:</b>
+                </td>
+                <td>
+                  <div class="social">
+                    <div class="facebook"><a href="" class="stretched"></a></div>
+                    <div class="instagram"><a href="" class="stretched"></a></div>
+                   </div>
+                </td>
+              </tr>
+            </table>
+            <table class="table right">
+              <tr>
+                  <td>
+                      <b>Адрес:</b>
+                  </td>
+                  <td>Россия, г. Москва ул. Ленинская Слобода. д. 26, 5 минут от м. Автозаводская Бизнес-центр "Омега-2", корпус А, офис 425
+                  </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of description -->
+  </div>
+  <!-- content -->
+
+  //= ./templates/footer.html
+
+</div>
+<!-- end wrapper -->
+
+<div class="modal_bg js_modal_bg"></div>
+
+<script src="./js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5xJ4UzffQTzEyuS0h8azZD2uSSut-OuQ"></script>
+<script src="./js/libs/jquery.material.form.js"></script>
+<script src="./js/libs/jquery.validate.js"></script>
+<script src="./js/contacts.js"></script>
+</body>
+
+</html>
