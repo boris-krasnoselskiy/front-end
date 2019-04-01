@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>404</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/404.css">
+</head>
+<body>
+
+<div class="wrapper">
+    //= ./template/header.html
+    <div class="content slide error_page">
+        <div class="container">
+          <div class="error">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-container">
+                  <div class="logo">
+                    <img src="imgs/logo.png" alt="logo">
+                    <a href="javascript:void(0);" class="streched"></a>
+                  </div>
+                  <div class="text_wrap">
+                    <h3>Ошибка 404. Страница не найдена.</h3>
+                    <p class="text">
+                      Запрашиваемой вами страницы нет на нашем сайте. Возможно вы ввели неправильный адрес или страница была удалена.Вы можете вернуться назад, воспользоваться меню внизу, либо перейти на 
+                      <a href="/">главную страницу</a>
+                    <p>
+                  </div>
+                  <img src="imgs/404.png" class="error_logo" alt="404">
+
+                  <section class="contact_us col-md-9 col-md-offset-2">
+                      <h2>Свяжитесь с нами для обсуждения своего проекта</h2>
+                      <form action="/">
+                          <div class="input_wrap">
+                              <input type="text" placeholder="Ваше имя *" required="true">
+                              <input type="text" placeholder="Номер телефона *" required="true">
+                              <input type="text" placeholder="Электронная почта *" required="true">
+                          </div>
+                          <!-- end of input_wrap -->
+                          <textarea placeholder="Расскажите о своем проекте"></textarea>
+                          <input class="btn btn-blue" type="submit" value="Отправить">
+                      </form>
+                  </section>
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    //= ./template/footer.html
+    <!-- //= ./template/mobile_menu.html -->
+
+</div>
+<!-- end wrapper -->
+
+<div class="modal_bg js_modal_bg"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCApJl4OuuTyH5o6U6h6yIvIKlA7nPh9cE"></script>
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./js/libs/bootstrap.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

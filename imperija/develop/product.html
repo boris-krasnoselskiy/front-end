@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>product</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="./bower_components/scrollbar/scrollbar.css">
+    <link rel="stylesheet" href="./bower_components/hover/css/hover.css">
+    <link rel="stylesheet" href="css/libs/trunk.css">
+    <link rel="stylesheet" href="css/libs/slick.css">
+    <link rel="stylesheet" href="css/libs/formstyler.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+<div class="wrapper">
+    //= ./template/header.html
+    <div class="content slide product_page">
+        <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">Оборудование</a></li>
+              <li class="breadcrumb-item"><a href="#">Комплексы по производству макаронных издлий</a></li>
+              <li class="breadcrumb-item">Производственая линия 1</li>
+            </ol>
+
+            //= ./template/widgets.html
+
+            <div class="heading clearfix">
+              <h2>Complete Pasta Line For Short Cut Pasta</h2>
+              <h2 class="right">La Parmigiana</h2>
+            </div>
+
+            <section class="product_content row">
+              <div class="tabs_wrap col-md-8">
+                <ul class="nav nav-pills top-pills broad_nav_desk">
+                  <li class="active">
+                    <a href="#1b" data-toggle="tab">Цена и комплектация</a>
+                  </li>
+                  <li>
+                    <a href="#2b" data-toggle="tab">Характеристики</a>
+                  </li>
+                  <li>
+                    <a href="#3b" data-toggle="tab">Доп. оборудование</a>
+                  </li>
+                  <li>
+                    <a href="#4b" data-toggle="tab">Оплата и доставка</a>
+                  </li>
+                </ul>
+
+                <ul class="broad_nav_mobile">
+                  <li class="active">
+                    <a href="#1b" data-toggle="tab">Все производители</a>
+                  </li>
+                  <li>
+                    <a href="#2b" data-toggle="tab">DHF</a>
+                  </li>
+                  <li>
+                    <a href="#3b" data-toggle="tab">Sumitomo</a>
+                  </li>
+                  <li>
+                    <a href="#4b" data-toggle="tab">Dolfamex</a>
+                  </li>
+                </ul>
+
+                <div class="tab-content clearfix manufacturers">
+                  <div class="tab-pane active" id="1b">
+                    <div class="manufactures_row clearfix">
+                      <div class="info_wrap">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Характеристика</th>
+                              <th scope="col">Пресс</th>
+                              <th scope="col">Сушильный комплекс</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Средняя производительность по сухому продукту</td>
+                              <td>400 – 500 кг/ч</td>
+                              <td>450кг/ч</td>
+                            </tr>
+                            <tr>
+                              <td>Установленная мощность</td>
+                              <td>34, 5 кВт </td>
+                              <td>190 кВт</td>
+                            </tr>
+                            <tr>
+                              <td>Средняя производительность по сухому продукту</td>
+                              <td>400 – 500 кг/ч</td>
+                              <td>450кг/ч</td>
+                            </tr>
+                            <tr>
+                              <td>Установленная мощность</td>
+                              <td>34, 5 кВт </td>
+                              <td>190 кВт</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <img src="imgs/text_image.png" alt="text_image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="2b">
+                    <h3>2c</h3>
+                  </div>
+                  <div class="tab-pane" id="3b">
+                    <h3>3c</h3>
+                  </div>
+                  <div class="tab-pane" id="4b">
+                    <h3>4c</h3>
+                  </div>
+                </div>
+
+                <ul class="nav nav-pills bottom-pills broad_nav_desk">
+                  <li class="active">
+                    <a href="#1b" data-toggle="tab">Цена и комплектация</a>
+                  </li>
+                  <li>
+                    <a href="#2b" data-toggle="tab">Характеристики</a>
+                  </li>
+                  <li>
+                    <a href="#3b" data-toggle="tab">Доп. оборудование</a>
+                  </li>
+                  <li>
+                    <a href="#4b" data-toggle="tab">Оплата и доставка</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="form_wrap col-md-4">
+                <h2>Подбор комплектации</h2>
+                <form action="/">
+                    <input type="text" placeholder="Ваше имя *" required="true">
+                    <input type="text" placeholder="Номер телефона *" required="true">
+                    <input type="text" placeholder="Электронная почта *" required="true">
+                    <textarea placeholder="Комментарий"></textarea>
+                    <input class="btn btn-blue" type="submit" value="Отправить">
+                </form>
+              </div>
+            </section>
+
+            <section class="contact_us col-md-8 col-md-offset-2">
+              <h2>Свяжитесь с нами для обсуждения своего проекта</h2>
+              <form action="/">
+                  <div class="input_wrap">
+                      <input type="text" placeholder="Ваше имя *" required="true">
+                      <input type="text" placeholder="Номер телефона *" required="true">
+                      <input type="text" placeholder="Электронная почта *" required="true">
+                  </div>
+                  <!-- end of input_wrap -->
+                  <textarea placeholder="Расскажите о своем проекте"></textarea>
+                  <input class="btn btn-blue" type="submit" value="Отправить">
+              </form>
+            </section>
+
+            //= ./template/department.html
+
+        </div>
+
+
+    </div>
+    //= ./template/footer.html
+    //= ./template/mobile_menu.html
+    //= ./template/modals.html
+
+</div>
+<!-- end wrapper -->
+
+<div class="modal_bg js_modal_bg"></div>
+
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./js/libs/bootstrap.js"></script>
+<script src="./bower_components/scrollbar/scrollbar.js"></script>
+<script src="./js/libs/trunk.js"></script>
+<script src="./js/libs/formstyler.js"></script>
+<script src="./js/libs/matchHeight.js"></script>
+<script src="./js/libs/slick.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/product.js"></script>
+</body>
+</html>

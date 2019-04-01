@@ -1,0 +1,117 @@
+@import "partials/vars";
+
+h2 {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.breadcrumb {
+	margin-top: -30px;
+	margin-bottom: 32px;
+}
+
+.read_more_wrap {
+	img {
+		margin-left: 1px;
+	}
+}
+
+.rewievs_item {
+	margin-bottom: 40px;
+	.title {
+		margin-bottom: 15px;
+		h3 {
+			margin: 0;
+		}
+		span {
+			color: #000;
+		}
+	}
+	.rewievs {
+		margin-bottom: 7px;
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		margin-left: -15px;
+		padding-left: 15px;
+		.inserted {
+			font-size: 28px;
+			display: inline-block;
+			margin-top: -3px;
+			margin-left: -16px;
+		}
+		.inserted.left {
+			float: left;
+		}
+		.inserted.right {
+			margin-left: 0;
+	    vertical-align: middle;
+	    margin-top: -8px;
+		}
+	}
+	.rewievs.clipped {
+		height: 145px;
+		overflow: hidden;
+	}
+	.read_more {
+		color: $blue;
+		img {
+			transition: all .35s;
+		}
+	}
+	.rotated {
+		transform: rotate(180deg);
+	}
+}
+
+.seo_text {
+	display: none;
+}
+
+.pagination {
+	margin-bottom: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 1300px) {
+	.pagination {
+		margin-bottom: 30px;
+	}
+}
+
+@media (min-width: 740px) and (max-width: 1300px) {
+	.rewievs_item .rewievs.clipped {
+		height: 140px;
+	}
+	.heading {
+		h1 {
+			margin-bottom: 27px;
+		}
+		img {
+			position: absolute;
+			left: -5px;
+		}
+		ul {
+			position: absolute;
+			right: 20px;
+			left: auto;
+			top: 50%;
+			transform: translate(0, -50%);
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1701px) {
+	.rewievs_item {
+		.rewievs.clipped {
+			margin-bottom: 13px;
+		}
+	}
+	.heading {
+		margin-bottom: 40px;
+		h1 {
+			padding-left: 25px;
+		}
+	}
+}

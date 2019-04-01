@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>text</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="./bower_components/scrollbar/scrollbar.css">
+    <link rel="stylesheet" href="./bower_components/hover/css/hover.css">
+    <link rel="stylesheet" href="css/libs/trunk.css">
+    <link rel="stylesheet" href="css/libs/slick.css">
+    <link rel="stylesheet" href="css/libs/formstyler.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="slide mobile_header">
+    	<ul id="navToggle" class="burger">
+    		<li></li><li></li><li></li>
+    	</ul>
+    	<div class="logo">
+    		<img src="imgs/logo.png" alt="logo">
+    		<a href="javascript:void(0);" class="streched"></a>
+    	</div>
+    </header>
+    
+    <header class="desktop_header">
+    	<div class="top_line">
+    		<div class="container">
+    			<ul class="top_links">
+    				<li>
+    					<a href="tel:+38 (057) 719 62 09">
+    						<i class="fa fa-mobile" aria-hidden="true"></i>
+    						<span>+38 (057) 719 62 09</span>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:void(0);">
+    						<span>Все направления деятельности</span>
+    					</a>
+    					<ul class="dropdown_hidden directions">
+    						<li><a href="https://imperija.com/">imperija.com</a></li>
+    						<li><a href="https://sweets.imperija.com/">sweets.imperija.com</a></li>
+    						<li><a href="https://b2b.imperija.com/">b2b.imperija.com</a></li>
+    						<li><a href="https://pasta.imperija.com/">pasta.imperija.com</a></li>
+    					</ul>
+    				</li>
+    			</ul>
+    			<ul class="right_menu pull-right">
+    				<li class="js_delivery" data-toggle="modal" data-target="#delivery_modal">
+    					<img src="imgs/truck-icon.png" alt="truck">
+    				</li>
+    				<li class="lang js_lang">
+    					<img src="imgs/world-map.png" alt="map">
+    					Русский
+    					<ul class="dropdown_hidden">
+    						<li class="lang_item js_lang_item">Русский</li>
+    						<li class="lang_item js_lang_item">Украинский</li>
+    						<li class="lang_item js_lang_item">Английский</li>
+    					</ul>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="bottom_line">
+    		<div class="container">
+    			<div class="row">
+    				<div class="company col-md-1">
+    					<div class="logo">
+    						<img src="imgs/logo.png" alt="logo">
+    						<a href="javascript:void(0);" class="streched"></a>
+    					</div>
+    				</div>
+    				<div class="col-md-10">
+    					<div class="tagline">
+    						<p>Железная</p>
+    						<p>форма качества</p>
+    					</div>
+    					<ul class="nav">
+    						<li class="active"><a href="javascript:void(0);">Главная</a></li>
+    						<li>
+    							<a href="javascript:void(0);">Кредит</a>
+    <!-- 							<ul class="nested">
+    								<li><a href="javascript:void(0);">Вакансии</a></li>
+    							</ul> -->
+    						</li>
+    						<li>
+    							<a href="javascript:void(0);">Сервис</a>
+    							<ul class="nested">
+    								<li>
+    									<a href="javascript:void(0);">Для фрезерных станков</a>
+    								</li>
+    								<li>
+    									<a href="javascript:void(0);">Для токарных станков</a>
+    								</li>
+    								<li>
+    									<a href="javascript:void(0);">Производители</a>
+    								</li>
+    							</ul>
+    						</li>
+    						<li>
+    							<a href="javascript:void(0);">Оборудование</a>
+    							<ul class="nested lvl_one">
+    								<li>
+    									<a href="javascript:void(0);">Фрезы металлообрабатывающие</a>
+    									<ul class="nested lvl_two">
+    										<li>
+    											<a href="">Фрезы DHF</a>
+    											<ul class="nested lvl_three">
+    												<li><a href="">Фрезы монолитные DHF</a></li>
+    												<li><a href="">Фрезы с мехкреплением пластин DHF</a></li>
+    												<li><a href="">Роутеры DHF</a></li>
+    											</ul>
+    										</li>
+    										<li>
+    											<a href="">Фрезы Sumitomo</a>
+    										</li>
+    										<li>
+    											<a href="">Фрезы Dolfamex</a>
+    										</li>
+    										<li>
+    											<a href="">Фрезы SGS </a>
+    										</li>
+    										<li>
+    											<a href="">YG-1</a>
+    										</li>
+    										<li>
+    											<a href="">OSAWA</a>
+    										</li>
+    										<li>
+    											<a href="">NIKKOTOOLS</a>
+    										</li>
+    									</ul>
+    								</li>
+    								<li>
+    									<a href="javascript:void(0);">Токарный</a>
+    								</li>
+    								<li>
+    									<a href="javascript:void(0);">Сверлильный</a>
+    								</li>
+    								<li>
+    									<a href="javascript:void(0);">Резьбонарезной</a>
+    								</li>
+    								<li>
+    									<a href="javascript:void(0);">Борфрезы</a>
+    								</li>
+    								<li>
+    									<a href="javascript:void(0);">Производители</a>
+    								</li>
+    							</ul>
+    						</li>
+    						<li><a href="javascript:void(0);">Новости</a></li>
+    						<li><a href="javascript:void(0);">Статьи</a></li>
+    						<li><a href="javascript:void(0);">О компании</a></li>
+    						<li><a href="javascript:void(0);">Контакты</a></li>
+    					</ul>
+    				</div>
+    				<div class="col-md-1 form_container">
+    					<button class="search-icon"></button>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="search_wrap">
+    	   <div class="container">
+    	      <div class="row">
+    	         <div class="col-md-12">
+    	            <form action="search/" method="get">
+    	            	<input type="text" name="q" class="search-input" placeholder="Поиск...">
+    	            	<button type="submit" class="search-icon"></button>
+    	            </form>
+    	         </div>
+    	      </div>
+    	   </div>
+    	</div>
+    </header>
+    <div class="content slide text_page">
+        <div class="container">
+
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">Оборудование</a></li>
+              <li class="breadcrumb-item active">Комплексы по производству макарон</li>
+            </ol>
+
+            <ul class="widgets">
+            	<li data-toggle="modal" data-target="#calculation">
+            		<img src="imgs/widget_list.png" alt="">
+            		<div class="text">
+            			<p>Заказать</p>
+            			<p class="small">индивидуальный расчет</p>
+            		</div>
+            	</li>
+            	<li data-toggle="modal" data-target="#callback_form">
+            		<img src="imgs/callback-icon.png" alt="">
+            		<div class="text">
+            			<p>Заказать</p>
+            			<p class="small">обратный звонок</p>
+            		</div>
+            	</li>
+            	<li class="hvr-wobble-horizontal animated js_animated">
+            		<img src="imgs/free-call-icon.png" alt="">
+            		<div class="text">
+            			<p>Позвонить</p>
+            			<p class="small">на бесплатный номер</p>
+            		</div>
+            	</li>
+            </ul>
+
+            <div class="heading clearfix">
+              <h2>Комплекс по производств макаронных изделий</h2>
+            </div>
+
+            <section class="text_section row">
+              <div class="col-md-8">
+                <h2>Комплекс по производству макаронных изделий</h2>
+                <h3 class="bold">При разработке комплекса в одном автоматизированном процессе были объединены все новинки технологии макаронного производства:</h3>
+
+                <ul class="list dark">
+                  <li>подготовка муки в виде двухстадийной очистки с отводом примесей;</li>
+                  <li>вакуумный «премиксер» подготовки макаронного теста в виде крупки;</li>
+                  <li>двухстадийный автономный сушильный комплекс, позволяющий применить разные виды сушки, значительно снижает энергозатраты.</li>
+                </ul>
+
+                <h3 class="bold">Особое расположение выхода теста дает два преимущества:</h3>
+
+                <ul class="list dark">
+                  <li>идеально ровные изделия типа «перо»;</li>
+                  <li>возможность с минимальными затратами переоборудовать линию под производство спагетти.</li>
+                </ul>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Характеристика</th>
+                      <th scope="col">Пресс</th>
+                      <th scope="col">Сушильный комплекс</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Средняя производительность по сухому продукту</td>
+                      <td>400 – 500 кг/ч</td>
+                      <td>450кг/ч</td>
+                    </tr>
+                    <tr>
+                      <td>Установленная мощность</td>
+                      <td>34, 5 кВт </td>
+                      <td>190 кВт</td>
+                    </tr>
+                    <tr>
+                      <td>Средняя производительность по сухому продукту</td>
+                      <td>400 – 500 кг/ч</td>
+                      <td>450кг/ч</td>
+                    </tr>
+                    <tr>
+                      <td>Установленная мощность</td>
+                      <td>34, 5 кВт </td>
+                      <td>190 кВт</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <ol class="numbers">
+                  <li>мукопросеиватель грубой очистки</li>
+                  <li>мукопросеиватель тонкой очистки</li>
+                  <li>премиксер</li>
+                  <li>пресс макаронный</li>
+                  <li>перьерезка</li>
+                </ol>
+
+                <img src="imgs/text_image.png" alt="text_image">
+
+                <h3>Принцип работы пресса макаронного ПМ 500.00.00.000</h3>
+
+                <p>При загрузке муки в приемный бункер и пуске мукопросеивателя, происходит просеивание муки и отвод отходов, а так же удаление металлических примесей. Подающий гибкий шнек обеспечивает подачу муки к следующему рабочему органу макаронной линии, датчики уровня сигнализируют о наличии уровня муки в бункере.</p>
+
+                <b>Парогенератор не используется!</b>
+
+              </div>
+              <div class="col-md-4 sidebar">
+                <h4 class="title">Оборудование</h4>
+                <div class="sidebar_item">
+                  <img src="imgs/sidebar_img.png" alt="sidebar_img">
+                  <div class="text">
+                    <h5>Комплекс по производству макаронных изделий</h5>
+                  </div>
+                </div>
+                <div class="sidebar_item">
+                  <img src="imgs/sidebar_img.png" alt="sidebar_img">
+                  <div class="text">
+                    <h5>Пресс макаронный ПМ 500</h5>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="contact_us col-md-8 col-md-offset-2">
+              <h2>Свяжитесь с нами для обсуждения своего проекта</h2>
+              <form action="/" method="post">
+                  <div class="input_wrap">
+                      <input type="text" placeholder="Ваше имя *" required="true">
+                      <input type="text" placeholder="Номер телефона *" required="true">
+                      <input type="text" placeholder="Электронная почта *" required="true">
+                  </div>
+                  <!-- end of input_wrap -->
+                  <textarea placeholder="Расскажите о своем проекте"></textarea>
+                  <input class="btn btn-blue" type="submit" value="Отправить">
+              </form>
+            </section>
+
+            <section class="department">
+                <div class="heading clearfix">
+                    <h2>Отдел реализации инструмента и металлообрабатывающего оборудования</h2>
+                </div>
+                <!-- end of heading -->
+            
+                <div class="row row_department">
+                    <div class="col-md-3 department_leader">
+                        <img src="imgs/department-image_1.png" alt="department-image" class="photo">
+                        <div class="department_heading">
+                            <div class="text_wrap">
+                                <img src="imgs/folder_icon.png" alt="">
+                                <div class="text">
+                                    <h4>Дмитрий Панов</h4>
+                                    <p>Руководитель группы продаж</p>
+                                </div>
+                                <ul class="contacts">
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/phone-icon.png" alt="phone-icon">
+                                        </div>
+                                        <a href="tel:+38 (057) 719 62 09">+38 (057) 719 62 09</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+38 (067) 319 70 43">+38 (067) 319 70 43</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/mail-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="mailto:panov@imperija.com">panov@imperija.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/skype-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="skype:panovdima">panovdima</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end of text_wrap -->
+                        </div>
+                        <!-- end of department_heading -->
+                    </div>
+                    <!-- end of department_leader -->
+                    <div class="col-md-3 department_leader">
+                        <img src="imgs/department-image_1.png" alt="department-image" class="photo">
+                        <div class="department_heading">
+                            <div class="text_wrap">
+                                <img src="imgs/folder_icon.png" alt="">
+                                <div class="text">
+                                    <h4>Дмитрий Панов</h4>
+                                    <p>Руководитель группы продаж</p>
+                                </div>
+                                <ul class="contacts">
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/phone-icon.png" alt="phone-icon">
+                                        </div>
+                                        <a href="tel:+38 (057) 719 62 09">+38 (057) 719 62 09</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+38 (067) 319 70 43">+38 (067) 319 70 43</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/mail-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="mailto:panov@imperija.com">panov@imperija.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/skype-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="skype:panovdima">panovdima</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end of text_wrap -->
+                        </div>
+                        <!-- end of department_heading -->
+                    </div>
+                    <div class="col-md-3 department_leader">
+                        <img src="imgs/department-image_1.png" alt="department-image" class="photo">
+                        <div class="department_heading">
+                            <div class="text_wrap">
+                                <img src="imgs/folder_icon.png" alt="">
+                                <div class="text">
+                                    <h4>Дмитрий Панов</h4>
+                                    <p>Руководитель группы продаж</p>
+                                </div>
+                                <ul class="contacts">
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/phone-icon.png" alt="phone-icon">
+                                        </div>
+                                        <a href="tel:+38 (057) 719 62 09">+38 (057) 719 62 09</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+38 (067) 319 70 43">+38 (067) 319 70 43</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/mail-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="mailto:panov@imperija.com">panov@imperija.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/skype-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="skype:panovdima">panovdima</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end of text_wrap -->
+                        </div>
+                        <!-- end of department_heading -->
+                    </div>
+                    <!-- end of department_leader -->
+                    <div class="col-md-3 department_leader">
+                        <img src="imgs/department-image_1.png" alt="department-image" class="photo">
+                        <div class="department_heading">
+                            <div class="text_wrap">
+                                <img src="imgs/folder_icon.png" alt="">
+                                <div class="text">
+                                    <h4>Дмитрий Панов</h4>
+                                    <p>Руководитель группы продаж</p>
+                                </div>
+                                <ul class="contacts">
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/phone-icon.png" alt="phone-icon">
+                                        </div>
+                                        <a href="tel:+38 (057) 719 62 09">+38 (057) 719 62 09</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+38 (067) 319 70 43">+38 (067) 319 70 43</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/mail-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="mailto:panov@imperija.com">panov@imperija.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="img_wrap">
+                                            <img src="imgs/skype-icon.png" alt="mail-icon">
+                                        </div>
+                                        <a href="skype:panovdima">panovdima</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end of text_wrap -->
+                        </div>
+                        <!-- end of department_heading -->
+                    </div>
+                    <!-- end of department_leader -->
+                </div>
+                <!-- end of row_department -->
+            </section>
+            
+            <section class="subscribe col-md-7 col-md-offset-2">
+                <div class="contacts_part">
+                    <h3>Контактная информация</h3>
+                    <ul>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="imgs/pin-icon.png" alt="pin-icon">
+                            </div>
+                            <span>НПО «Империя металлов»Григоровское шоссе, дом 88г. Харьков, 61039, Украина</span>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="imgs/phone-icon.png" alt="phone-icon">
+                            </div>
+                            <a href="tel:+38 (057) 719 62 09">+38 (057) 719 62 09</a>
+                        </li>
+                        <li>
+                            <div class="img_wrap">
+                                <img src="imgs/mail-icon.png" alt="mail-icon">
+                            </div>
+                            <a href="mailto:admin@imperija.com">admin@imperija.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end of contacts_part -->
+                <div class="dispatch">
+                    <h3>Новостная рассылка</h3>
+                    <form action="/">
+                        <input type="text" placeholder="Ваше имя *">
+                        <input type="text" placeholder="Электронная почта *">
+                        <input type="submit" class="btn btn-blue" value="Подписаться">
+                    </form>
+                </div>
+                <!-- end of dispatch -->
+            </section>
+
+        </div>
+
+
+    </div>
+    <img src="imgs/arrUp.png" class="scroll-top" alt="arrUp">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="copy_wrap col-md-3">
+                  <div class="logo">
+                      <img src="imgs/logo.png" alt="logo">
+                      <a href="/" class="streched"></a>
+                  </div>
+                  <div class="text">
+                      <p>© 2015−2017 НПО «Империя металлов»</p>
+                      <p>Все права защищены</p>
+                  </div>
+              </div>
+    
+              <div class="partners col-md-5">
+                  <div class="partner">
+                      <img src="imgs/raiffeisen-logo.png" alt="raiffeisen_logo">
+                      <a href="/" class="streched"></a>
+                  </div>
+                  <div class="text">
+                      <p>Генеральный партнер</p>
+                      <p>Райффайзен Банк Аваль Украина</p>
+                  </div>
+              </div>
+    
+              <div class="developed col-md-4">
+                  <div class="text">
+                      <p>Дизайн макета — студия <a href="/">Goracio</a></p>
+                      <p>Верстка и программирование — <a href="/">7lines</a></p>
+                  </div>
+                  <div class="social">
+                      <div class="youtube">
+                          <img src="imgs/youtube-logo.png" alt="">
+                          <a href="/" class="streched"></a>
+                      </div>
+                      <div class="facebook">
+                          <img src="imgs/facebook-logo.png" alt="">
+                          <a href="/" class="streched"></a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <nav class="slide mobile_panel">
+        <ul class="nav">
+            <li class="active"><a href="javascript:void(0);">Главная</a></li>
+            <li><a href="javascript:void(0);">Окомпании</a></li>
+            <li><a href="javascript:void(0);">Оснастка</a></li>
+            <li><a href="javascript:void(0);">Инструмент</a></li>
+            <li><a href="javascript:void(0);">Новости</a></li>
+            <li><a href="javascript:void(0);">Статьи</a></li>
+            <li><a href="javascript:void(0);">Полезное</a></li>
+            <li><a href="javascript:void(0);">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="modal fade contact_us_modal" id="delivery_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <h3>Мы доставляем оборудование по всей Украине</h3>
+            <div class="js_place place">
+              <img src="imgs/big-pin-hover.png" alt="big-pin">
+              <div class="city-name js_city-name"></div>
+            </div>
+            <!-- end of js_place place -->
+            <div class="img_holder">
+              <img src="imgs/ukraine-map.png" class="full-width" alt="ukraine-map">
+              <div class="markers">
+                <div class="marker js_marker" data-place-name="Киев" data-position-y="65" data-position-x="120"></div>
+                <div class="marker js_marker" data-place-name="Харьков" data-position-y="152" data-position-x="82"></div>
+                <div class="marker js_marker" data-place-name="Одесса" data-position-y="252" data-position-x="42"></div>
+                <div class="marker js_marker" data-place-name="Днепр" data-position-y="82" data-position-x="182"></div>
+                <div class="marker js_marker" data-place-name="Запорожье" data-position-y="190" data-position-x="132"></div>
+                <div class="marker js_marker" data-place-name="Львов" data-position-y="222" data-position-x="90"></div>
+                <div class="marker js_marker" data-place-name="Кривой Рог" data-position-y="252" data-position-x="152"></div>
+                <div class="marker js_marker" data-place-name="Николаев" data-position-y="212" data-position-x="262"></div>
+                <div class="marker js_marker" data-place-name="Мариуполь" data-position-y="170" data-position-x="192"></div>
+                <div class="marker js_marker" data-place-name="Полтава" data-position-y="102" data-position-x="252"></div>
+                <div class="marker js_marker" data-place-name="Хмельницкий" data-position-y="112" data-position-x="347"></div>
+                <div class="marker js_marker" data-place-name="Сумы" data-position-y="172" data-position-x="402"></div>
+                <div class="marker js_marker" data-place-name="Каменское" data-position-y="62" data-position-x="392"></div>
+                <div class="marker js_marker" data-place-name="Луцк" data-position-y="82" data-position-x="492"></div>
+                <div class="marker js_marker" data-place-name="Павлоград" data-position-y="162" data-position-x="462"></div>
+                <div class="marker js_marker" data-place-name="Северодонецк" data-position-y="172" data-position-x="602"></div>
+                <div class="marker js_marker" data-place-name="Бровары" data-position-y="242" data-position-x="422"></div>
+                <div class="marker js_marker" data-place-name="Славянск" data-position-y="242" data-position-x="532"></div>
+                <div class="marker js_marker" data-place-name="Никополь" data-position-y="212" data-position-x="692"></div>
+                <div class="marker js_marker" data-place-name="Каменец-Подольский" data-position-y="262" data-position-x="652"></div>
+                <div class="marker js_marker" data-place-name="Белая Церковь" data-position-y="312" data-position-x="322"></div>
+                <div class="marker js_marker" data-place-name="Богодухов" data-position-y="312" data-position-x="412"></div>
+                <div class="marker js_marker" data-place-name="Борислав" data-position-y="352" data-position-x="482"></div>
+                <div class="marker js_marker" data-place-name="Борщёв" data-position-y="322" data-position-x="572"></div>
+                <div class="marker js_marker" data-place-name="Бровары" data-position-y="442" data-position-x="502"></div>
+                <div class="marker js_marker" data-place-name="Бурынь" data-position-y="402" data-position-x="292"></div>
+              </div>
+              <!-- end of markers -->
+            </div>
+            <!-- end of img_holder -->
+    
+            <h2>Свяжитесь с нами для обсуждения своего проекта</h2>
+            <form action="/">
+                <div class="input_wrap">
+                    <input type="text" placeholder="Ваше имя *" required="true">
+                    <input type="text" placeholder="Номер телефона *" required="true">
+                    <input type="text" placeholder="Электронная почта *" required="true">
+                </div>
+                <!-- end of input_wrap -->
+                <textarea placeholder="Расскажите о своем проекте"></textarea>
+                <input class="btn btn-blue" type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="callback_form" class="modal fade callback_form" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-body">
+            <h2>Введите контактные данные</h2>
+            <form action="/">
+              <input type="text" placeholder="Ваше Имя*">
+              <input type="text" placeholder="Номер телефона*">
+              <input type="submit" class="btn btn-blue" value="Перезвоните мне">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="testing_equipment" class="modal fade testing_equipment" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-body">
+            <h2>Хотите на практике убедиться в высоком качестве нашего инструмента?</h2>
+    
+            <p>Просто заполните форму и получите металлообрабатывающий инструмент для испытания на вашем оборудовании!</p>
+    
+            <form action="/" class="testing_equipment_form">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Ваше Имя*" required>
+                <input type="text" name="phone_number" placeholder="Номер телефона*" required>
+                <select name="producer" class="js_select">
+                  <option value="1" class="hiden_option">Производитель инструмента</option>
+                  <option value="1">Производитель инструмента 1</option>
+                  <option value="2">Производитель инструмента 2</option>
+                  <option value="3">Производитель инструмента 3</option>
+                </select>
+              </div>
+              <!-- form-goup -->
+              <div class="form-group">
+                <input type="text" name="company_name" placeholder="Название Вашей компании *" required>
+                <input type="text" name="email" placeholder="Электронная почта *" required>
+                <select name="producer" class="js_select">
+                  <option value="1" class="hiden_option">Тип станка</option>
+                  <option value="2">Фрезерный станок</option>
+                  <option value="3">Токарный станок</option>
+                </select>
+              </div>
+              <!-- form-goup -->
+              <textarea class="textarea" placeholder="Вид операций в которых хотите протестировать инструмент"></textarea>
+              <input type="submit" class="btn btn-blue" value="Отправить">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="response_modal" class="modal fade response_modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-body">
+            <p>
+              На ваш почтовый ящик отправлена ссылка для активации заявки.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="calculation" class="modal fade calculation" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content clearfix">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="modal-body">
+            <h2>Заказать индивидуальный расчет</h2>
+            <form action="/" class="calculation_form" method="post">
+              <div class="form-group col-md-6">
+                <label>
+                  <span>*</span>
+                  Название компании
+                </label>
+                <input type="text" name="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label>
+                  Ваше имя
+                </label>
+                <input type="text" name="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label>
+                  <span>*</span>
+                  Номер телефона
+                </label>
+                <input type="text" name="phone_number" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label>
+                  <span>*</span>
+                  Електронный адрес
+                </label>
+                <input type="text" name="email" required>
+              </div>
+              <div class="form-group col-md-12">
+                <label>
+                  <span>*</span>
+                  Тип макаронной линии
+                </label>
+                 <div class="boxed row">
+                  <div class="col-md-6">
+                    <input type="radio" id="short_cut" name="skills" value="short_cut" checked="true">
+                    <label for="short_cut">Короткорезные</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="radio" id="long_cut" name="skills" value="long_cut">
+                    <label for="long_cut" class="col-md-6">Длиннорезные</label>
+                  </div>
+                 </div>
+              </div>
+              <div class="form-group col-md-12">
+                <label>
+                  <span>*</span>
+                  Укажите город
+                </label>
+                <input type="text" name="city" required>
+              </div>
+              <div class="form-group col-md-12">
+                <label>Комментарий</label>
+                <textarea class="textarea"></textarea>
+                <input type="submit" class="btn btn-blue subm_btn" value="Отправить">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<!-- end wrapper -->
+
+<div class="modal_bg js_modal_bg"></div>
+
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./js/libs/bootstrap.js"></script>
+<script src="./js/libs/trunk.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

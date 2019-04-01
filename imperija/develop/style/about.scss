@@ -1,0 +1,153 @@
+@import "partials/vars";
+
+.breadcrumb {
+	margin-top: -28px;
+	margin-bottom: 30px;
+}
+
+.top_banner {
+	margin-bottom: 50px;
+  border-bottom: 6px solid $blue;
+	.img_holder {
+		float: left;
+		min-height: 272px;
+		width: 65%;
+		background-size: cover!important;
+	}
+	.text {
+		padding: 30px 20px;
+    background: $blue;
+    width: 35%;
+    min-height: 200px;
+    margin-left: 65%;
+    p {
+	    color: #fff;
+	    font-size: 18px;
+	    line-height: 24px;
+    }
+	}
+}
+
+.features {
+	.features_item {
+		margin-bottom: 20px;
+		h2 {
+			font-size: 30px;
+			text-align: center;
+		}
+		p {
+			text-align: center;
+			font-size: 16px;
+		}
+	}
+}
+.features_description {
+	margin-bottom: 50px;
+	color: #000;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.structure {
+	margin-bottom: 50px;
+	.structure_item {
+		position: relative;
+		min-height: 250px;
+		margin-bottom: 70px;
+		img {
+			width: 220px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.text {
+			height: 36px;
+			width: 100%;
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			transform: translate(-50%, 0%);
+		}
+		p {
+			text-align: center;
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.about {
+	margin-bottom: 60px;
+	font-size: 16px;
+	p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 980px) {
+	section {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+	.top_banner {
+		margin-bottom: 10px;
+		.img_holder {
+			display: none;
+		}
+		.text {
+			width: 100%;
+			margin: 0;
+		}
+	}
+	.features_description {
+		margin-bottom: 20px;
+	}
+	.structure {
+		margin-bottom: 20px;
+		.structure_item {
+			margin-bottom: 30px;
+		}
+	}
+	.description {
+		margin-top: 45px;
+	}
+	.about {
+		margin-bottom: 20px;
+		h2 {
+			margin-top: 0;
+			font-size: 18px;
+		}
+	}
+	ul {
+		padding-left: 20px;
+	}
+	p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+@media (min-width: 681px) and (max-width: 980px) {
+	.structure {
+		font-size: 0;
+		.structure_item {
+			display: inline-block;
+			width: 50%;
+			margin-bottom: 20px;
+		}
+	}
+	.description {
+		margin-top: 50px;
+	}
+	.features {
+		font-size: 0;
+		.features_item {
+			display: inline-block;
+			width: 50%;
+		}
+	}
+}

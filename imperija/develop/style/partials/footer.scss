@@ -1,0 +1,36 @@
+@import "vars";
+
+footer {
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+	footer {
+		.logo {
+			vertical-align: top;
+			img {
+				position: absolute;
+			}
+		}
+		.copy_wrap .text {
+		    max-width: 77%;
+		    padding-left: 55px;
+		}
+		.partners {
+			text-align: center;
+		}
+		.partner {
+			margin-bottom: 15px;
+		}
+		.developed .social {
+			display: block;
+			text-align: right;
+			padding-right: 110px;
+			margin-top: 10px;
+		}
+	}
+}

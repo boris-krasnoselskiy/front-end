@@ -1,0 +1,59 @@
+@import "partials/vars";
+
+.breadcrumb {
+	margin-top: -28px;
+	margin-bottom: 30px;
+}
+
+.seo_text {
+	display: none
+}
+
+.info_item {
+	margin-bottom: 50px;
+	.title {
+		margin-bottom: 25px;
+		font-weight: 600;
+		font-size: 20px;
+	}
+	img {
+		float: left;
+	}
+	.text {
+		margin-left: 140px;
+		h5 {
+	    margin-bottom: 10px;
+	    font-size: 16px;
+	    font-weight: 600;
+		}
+		span {
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+	&:hover span {
+		text-decoration: underline;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 380px) {
+	table {
+		zoom: 0.5;
+	}
+}
+
+@media (min-width: 381px) and (max-width: 480px) {
+	table {
+		zoom: 0.7;
+	}
+}
+
+@media (min-width: 681px) and (max-width: 992px) {
+	.info {
+		font-size: 0;
+	}
+	.info_item {
+		display: inline-block;
+		width: 50%;
+	}
+}

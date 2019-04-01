@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Search results</title>
+    <link rel="stylesheet" href="css/libs/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="./css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="./bower_components/scrollbar/scrollbar.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="wrapper">
+    //= ./template/header.html
+    <div class="content slide search_result">
+        <div class="container">
+
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item">Поиск</li>
+            </ol>
+
+            //= ./template/widgets.html
+
+            <div class="heading clearfix">
+              <h1>Результаты поиска для: <span class="query">12</span></h1>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 results_body">
+                <h3>Найденно в названии</h3>
+                <ol class="in_title">
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                </ol>
+
+                <h3>Найденно в аннотации</h3>
+                <ol class="in_annotations">
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                </ol>
+
+                <h3>Найденно в описании</h3>
+                <ol class="in_description">
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                  <li>1212e12e1 assefsfs</li>
+                </ol>
+
+              </div>
+            </div>
+            <!-- end of row -->
+        </div>
+    </div>
+    //= ./template/footer.html
+    //= ./template/modals.html
+    //= ./template/mobile_menu.html
+
+</div>
+<!-- end wrapper -->
+
+<div class="modal_bg js_modal_bg"></div>
+
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="./js/libs/bootstrap.js"></script>
+<script src="./bower_components/scrollbar/scrollbar.js"></script>
+<script src="./js/libs/trunk.js"></script>
+</body>
+</html>
